@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
-    <title>Untitled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Litzy 🌌</title>
     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas id="galaxy-canvas"></canvas>
 
-  </head>
-    
-  <body>
-  <canvas id="galaxy-canvas"></canvas>
+    <div class="pill">Te Amo Mucho mi Litzy ❤️❤️</div>
+    <div class="attribution">Base: tlanex · Adaptación para Jotab 💫</div>
+    <div id="err" class="error"></div>
 
-<div class="pill">Te Amo Mucho mi Litzy ❤️❤️</div>
-<div class="attribution">Base: tlanex · Adaptación para Jotab 💫</div>
-<div id="err" class="error"></div>
+    <div class="player">
+        <button id="playBtn">▶︎</button>
+        <span class="song-info">
+            Reproduciendo: <b>Coldplay - Yellow</b>
+        </span>
+        <audio id="audio" preload="auto">
+            <source src="https://www.dropbox.com/scl/fi/xhqujaiyy9bf2xof1v2t9/ytmp3free.cc_coldplay-yellow-official-video-youtubemp3free.org.mp3?raw=1" type="audio/mpeg">
+        </audio>
+    </div>
 
-<div class="player">
-  <button id="playBtn">▶︎</button>
-  <span style="font-size:12px;opacity:.9">
-    Reproduciendo: <b>Coldplay - Yellow</b>
-  </span>
-  <audio id="audio" preload="auto" autoplay>
-    <source src="https://www.dropbox.com/scl/fi/xhqujaiyy9bf2xof1v2t9/ytmp3free.cc_coldplay-yellow-official-video-youtubemp3free.org.mp3?dl=1" type="audio/mpeg">
-  </audio>
-</div>
+    <canvas id="fx" style="position:fixed;inset:0;pointer-events:none;"></canvas>
 
-<canvas id="fx" style="position:fixed;inset:0;pointer-events:none;"></canvas>
-    <script src='https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js'></script><script  src="./script.js"></script>
-
-  </body>
-  
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="./script.js"></script>
+</body>
 </html>
